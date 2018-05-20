@@ -1,0 +1,11 @@
+line:
+  channel_secret: 'FILL_IN'
+  channel_token: 'FILL_IN'
+  user_id: 'FILL_IN'
+devices: 
+  - name: 'device1'
+    ip: '192.168.0.1'
+  - name: 'device2'
+    ip: '192.168.0.2'
+spreadsheet:
+  key: 'FILL_IN'

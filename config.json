@@ -1,0 +1,8 @@
+{
+  "client_id": "FILL_IN",
+  "client_secret": "FILL_IN",
+  "scope": [
+    "https://www.googleapis.com/auth/drive",
+    "https://spreadsheets.google.com/feeds/"
+  ]
+}
