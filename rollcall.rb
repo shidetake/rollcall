@@ -49,6 +49,8 @@ class RollCall
          .spreadsheet_by_key(@config['spreadsheet']['key'])
          .worksheets[0]
 
+    return if same_status?(exists, ws)
+
     row = ws.num_rows + 1
     col = 1
 
@@ -59,6 +61,10 @@ class RollCall
       col += 1
     end
     ws.save
+  end
+
+  def same_status?(exists, ws)
+    exists == ws.rows[ws.num_rows - 1].drop(1).map(&:to_i)
   end
 end
 
